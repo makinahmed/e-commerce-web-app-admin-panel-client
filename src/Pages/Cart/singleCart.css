@@ -1,0 +1,9 @@
+.my-element::before {
+    content: "x";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    padding-bottom:10px;
+}
