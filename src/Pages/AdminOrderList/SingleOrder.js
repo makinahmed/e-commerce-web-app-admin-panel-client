@@ -20,23 +20,4 @@ console.log(order)
 
 export default SingleOrder;
 
-
-/*
-
-
-
-
-
- orderID,
-        customer name
-        customer address
-        product name
-        product details
-        customer details
-        customer mobile
-        customer payment
-        product quantity
-        delivery charge
-        isShifted
-        orderType
-        isPaid*/
+ 

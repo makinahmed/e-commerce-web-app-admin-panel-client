@@ -33,7 +33,6 @@ function ProductDetails() {
 
   const product = products?.find((product) => product._id === params.productId);
 
-  // const { title, img, description, stock, price, rating } = product;
   return (
     <>
       {products?.length && (

@@ -42,29 +42,5 @@ function SingleCart({ product, setCartProduct, cartProducts }) {
     </div>
   );
 }
-// {
-//   product?.title || <h2 className="text-error">Cart is Empty!</h2>;
-// }
+
 export default SingleCart;
-
-/*
-
-
-
-
-
-
-
-
-
- <div className=" rounded-xl mb-2">
-      <div className="card   card-side bg-base-100 shadow-xl p-8 items-center flex justify-between">
-        <h2 className="">Clock</h2>
-        <p>$200</p>
-        <p>$200</p>
-        <div className="">
-          <p>$200</p>
-          <span className="my-element"></span>
-        </div>
-      </div>
-    </div>*/

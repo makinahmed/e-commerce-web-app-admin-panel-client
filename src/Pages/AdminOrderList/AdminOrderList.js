@@ -56,12 +56,4 @@ function AdminOrderList() {
 
 export default AdminOrderList;
 
-/*
 
-
-
-
-
-
-
-*/

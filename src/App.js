@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Navigate, Route, Routes, useNavigate } from "react-router-dom";
+import { BrowserRouter,  Route, Routes, } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import SignIn from "./Pages/SignIn/SignIn";
 import SignUp from "./Pages/SignUp/SignUp";
@@ -11,13 +11,12 @@ import NavBar from "./Components/NavBar/NavBar";
 import { useState } from "react";
 import AddProducts from "./Pages/AddProducts/AddProducts";
 import AdminOrderList from "./Pages/AdminOrderList/AdminOrderList";
-import SingleOrder from "./Pages/AdminOrderList/SingleOrder";
 import OrderDetails from "./Pages/AdminOrderList/OrderDetails";
 import PrivateRoute from "./routes/PrivateRoute";
-import useAuth from "./Components/Hooks/useAuth";
+
 
 function App() {
- 
+
 
   const [cartProducts, setCartProduct] = useState([]);
   const handleUpdateCart = (currentProduct) => {
@@ -93,40 +92,3 @@ function App() {
 }
 export default App;
 
-/*
-
- const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Main />,
-      children: [
-        { path: "/", element: <Home /> },
-        { path: "blog", element: <Blog /> },
-        { path: "login", element: <SignIn /> },
-        { path: "signup", element: <SignUp /> },
-        { path: "cart", element: <Cart /> },
-        {
-          path: "product-list/",
-          children: [
-            { index: true, element: <ProductList /> },
-            {
-              path: ":productId",
-              element: <ProductDetails />,
-            },
-          ],
-        },
-
-        { path: "*", element: <NotFound /> },
-      ],
-    },
-  ]);
-<div>
-      <RouterProvider router={router} />
-    </div>
-
-
-
-
-
-
-*/

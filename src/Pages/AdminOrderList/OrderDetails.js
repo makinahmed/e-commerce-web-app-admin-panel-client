@@ -33,10 +33,10 @@ function OrderDetails() {
   const order = ordersList?.find((order) => order._id === orderId);
 
   return (
-    <div>
-      <section class="text-gray-700 body-font overflow-hidden bg-white">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+    <div className=" flex justify-center my-8">
+      <section class="w-1/2 text-gray-700 body-font overflow-hidden bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 flex justify-center ">
+        <div class="container  py-24 ">
+          <div class="lg:w-4/5 mx-auto flex flex-wrap flex justify-center">
             <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
               <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">
                 {order?.customerName}

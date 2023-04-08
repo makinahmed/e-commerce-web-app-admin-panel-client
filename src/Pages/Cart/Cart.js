@@ -27,31 +27,4 @@ function Cart({ cartProducts, setCartProduct }) {
 export default Cart;
 
 
-
-
-/*
-
-
-
-
-<div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
-        <div className="flex flex-col gap-1">
-          <div className=" flex p-4 justify-between md:border-b items-center	">
-            <p>Title </p>
-            <p>Price</p>
-            <p>Quantity</p>
-            <p>Total</p>
-          </div>
-          <SingleCart />
-          <SingleCart />
-          <SingleCart />
-        </div>
-      </div>
-      <button className="btn btn-success flex ">Delete parmanently</button>
-    </div>
-
-
-
-
-*/
+ 

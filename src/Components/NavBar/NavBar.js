@@ -8,7 +8,7 @@ function NavBar({ cartProducts }) {
   const menuItems = (
     <React.Fragment>
       <li>
-        <Link to="/cart">
+        <Link className="hover:bg-white" to="/cart">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -29,23 +29,41 @@ function NavBar({ cartProducts }) {
         </Link>
       </li>
       <li>
-        <Link to="/product-list">Product List</Link>
+        <Link className="bg-transparent text-black" to="/product-list">
+          Product List
+        </Link>
       </li>
       <li>
-        <Link to="/order-list">Order List</Link>
+        <Link className="bg-transparent text-black" to="/order-list">
+          Order List
+        </Link>
       </li>
-      <li>
-        <Link to="/add-product">Add Product</Link>
+      <li className="">
+        <Link className="bg-transparent text-black" to="/add-product">
+          Add Product
+        </Link>
       </li>
-      <li>
-        {!user?.email && <Link to="/login"> Sign In</Link>}
+      <li className="flex items-center">
+        {!user?.email && (
+          <Link className="bg-transparent text-black" to="/login">
+            
+            Sign In
+          </Link>
+        )}
         {user?.email && (
-          <button onClick={signOutUser} className="btn btn-error">
+          <button className="bg-transparent  text-error" onClick={signOutUser}>
             Log out
           </button>
         )}
       </li>
-      <li>{!user?.email && <Link to="/signup"> Sign Up</Link>}</li>
+      <li>
+        {!user?.email && (
+          <Link className="bg-transparent text-black" to="/signup">
+            {" "}
+            Sign Up
+          </Link>
+        )}
+      </li>
     </React.Fragment>
   );
 
@@ -72,7 +90,7 @@ function NavBar({ cartProducts }) {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2  bg-base-100 rounded-box w-52"
+              className="menu menu-compact dropdown-content mt-3 p-2  bg-base-100 rounded-box w-52 items-center"
             >
               {menuItems}
             </ul>
@@ -91,4 +109,3 @@ function NavBar({ cartProducts }) {
 }
 
 export default NavBar;
- 
